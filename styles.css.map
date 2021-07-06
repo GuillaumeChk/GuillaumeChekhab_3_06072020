@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACCA,AAAA,CAAC,CACD;EACI,WAAW,EAAE,oBAAoB;CACpC;;AAED,AAAA,KAAK,EAAE,EAAE,CACT;EACI,WAAW,EAAE,oBAAoB;CACpC",
+    "sources": [
+        "styles.scss",
+        "sass/Base/_base.scss",
+        "sass/Utils/_variables.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}
