@@ -1,0 +1,21 @@
+footer
+{
+    background-color: rgb(53, 53, 53);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: -20px;
+    left: -20px;
+    width: 150%;
+    padding: 20px;
+    line-height: 1.8em;
+    h1
+    {
+        font-size: medium;
+    }
+    a
+    {
+        color: white;
+    }
+}

@@ -2,7 +2,42 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  margin: 0;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
 .logo, h1 {
   font-family: 'Shrikhand', cursive;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  bottom: -20px;
+  left: -20px;
+  width: 150%;
+  padding: 20px;
+  line-height: 1.8em;
+}
+
+footer h1 {
+  font-size: medium;
+}
+
+footer a {
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */
