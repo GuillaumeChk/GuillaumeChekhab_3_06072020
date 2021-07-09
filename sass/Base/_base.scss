@@ -7,15 +7,35 @@
 body
 {
     margin: 0;
-    padding: 20px;
+    padding: $margin-page;
+}
+
+section
+{
+    display: flex;
+    flex-direction: column;
 }
 
 a
 {
     text-decoration: none;
+    color: black;
 }
 
-.logo, h1 
+header, h1 
 {
     font-family: 'Shrikhand', cursive;
+    margin: 0;
+}
+
+header
+{
+    display: flex;
+    justify-content: center;
+}
+
+img
+{
+    box-sizing: content-box;
+    width: 100%;
 }

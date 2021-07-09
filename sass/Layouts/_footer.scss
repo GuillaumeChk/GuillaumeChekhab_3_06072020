@@ -5,10 +5,10 @@ footer
     display: flex;
     flex-direction: column;
     position: relative;
-    bottom: -20px;
-    left: -20px;
-    width: 150%;
-    padding: 20px;
+    bottom: -$margin-page;
+    left: -$margin-page;
+    width: 100%;
+    padding: $margin-page;
     line-height: 1.8em;
     h1
     {

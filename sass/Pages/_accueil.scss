@@ -1,0 +1,61 @@
+.carte-resto
+{
+    @include carte;
+    height: 250px;
+    margin-bottom: 20px;
+    background-color: white;
+    img
+    {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
+        height: 175px;
+    }
+    h3, p
+    {
+        margin: auto;
+    }
+    // &__text
+    // {
+    //     display: flex;
+    //     flex-direction: column;
+    //     box-sizing: border-box;
+    //     border: solid black 5 px;
+    //     color: pink;
+    //     width: 100%;
+    //     margin: 13px;
+    //     padding: 13px;
+    // }
+}
+
+#section-resto, #section-explorer, #form-location
+{
+    background-color:whitesmoke;
+    position: relative;
+    left: -$margin-page;
+    bottom: -$margin-page;
+    width: 100%;
+    padding: $margin-page;
+    padding-bottom: 2*$margin-page;
+}
+
+#section-fonctionnement
+{
+    margin-top: 2*$margin-page;
+    margin-bottom: $margin-page;
+}
+
+#form-location
+{
+    display: flex;
+    justify-content: center;
+    background-color: gainsboro;
+    padding-bottom: $margin-page;
+    input
+    {
+        border: none;
+        background-color: gainsboro;
+        font-size: 1em;
+        font-weight: bold;
+    }
+}
