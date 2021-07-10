@@ -31,18 +31,19 @@
 #section-resto, #section-explorer, #form-location
 {
     background-color:whitesmoke;
-    position: relative;
-    left: -$margin-page;
-    bottom: -$margin-page;
-    width: 100%;
     padding: $margin-page;
     padding-bottom: 2*$margin-page;
 }
-
+#section-explorer
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
 #section-fonctionnement
 {
+    margin: $margin-page;
     margin-top: 2*$margin-page;
-    margin-bottom: $margin-page;
 }
 
 #form-location

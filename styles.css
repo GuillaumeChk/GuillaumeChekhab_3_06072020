@@ -4,7 +4,6 @@
 
 body {
   margin: 0;
-  padding: 20px;
 }
 
 section {
@@ -25,6 +24,8 @@ a {
 header, h1 {
   font-family: 'Shrikhand', cursive;
   margin: 0;
+  margin-top: 5.75px;
+  margin-bottom: 5.75px;
 }
 
 header {
@@ -52,11 +53,7 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
-  bottom: -20px;
-  left: -20px;
-  width: 100%;
-  padding: 20px;
+  padding: 23px;
   line-height: 1.8em;
 }
 
@@ -73,8 +70,10 @@ footer a {
           box-sizing: border-box;
   width: 100%;
   border-radius: 20px;
-  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.07);
+  background-color: white;
+  border: none;
   height: 250px;
   margin-bottom: 20px;
   background-color: white;
@@ -94,17 +93,23 @@ footer a {
 
 #section-resto, #section-explorer, #form-location {
   background-color: whitesmoke;
-  position: relative;
-  left: -20px;
-  bottom: -20px;
-  width: 100%;
-  padding: 20px;
-  padding-bottom: 40px;
+  padding: 23px;
+  padding-bottom: 46px;
+}
+
+#section-explorer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 #section-fonctionnement {
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin: 23px;
+  margin-top: 46px;
 }
 
 #form-location {
@@ -115,7 +120,7 @@ footer a {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: gainsboro;
-  padding-bottom: 20px;
+  padding-bottom: 23px;
 }
 
 #form-location input {
@@ -123,5 +128,76 @@ footer a {
   background-color: gainsboro;
   font-size: 1em;
   font-weight: bold;
+}
+
+.menu-page {
+  background-color: whitesmoke;
+}
+
+.menu-page section {
+  padding: 11.5px;
+}
+
+.menu-page section h2 {
+  font-variant-caps: all-petite-caps;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 3px;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+}
+
+.menu-page section button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.07);
+  background-color: white;
+  border: none;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.menu-page section button h3, .menu-page section button p {
+  margin: 5px;
+}
+
+.menu-page img {
+  position: relative;
+  z-index: -1;
+}
+
+.menu-titre {
+  border: none;
+  background-color: whitesmoke;
+  border-radius: 46px;
+  margin-top: -46px;
+  padding: 23px;
+  font-size: 1.6em;
+}
+
+.button-pink {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.07);
+  background-color: white;
+  border: none;
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  padding: 23px;
+  padding-top: 18.4px;
+  padding-bottom: 18.4px;
+  min-width: 65%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: medium;
+  border-radius: 46px;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,44 @@
+.menu-page
+{
+    background-color: whitesmoke;
+    // .section-menu
+    section
+    {
+        padding: $margin-page/2;
+        h2
+        {
+            font-variant-caps: all-petite-caps;
+            font-weight: 400;
+            margin: 0;
+            padding-bottom: 3px;
+            border-bottom: 3px solid $color-accent;
+            width: 40px;
+        }
+        button
+        {
+            @include carte;
+            margin-top: 15px;
+            text-align: left;
+            h3,p
+            {
+                margin: 5px;
+            }
+        }
+    }
+    // .menu-img
+    img
+    {
+        position: relative;
+        z-index: -1;
+    }
+}
+
+.menu-titre
+{
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 2*$margin-page;
+    margin-top: -2*$margin-page;
+    padding: $margin-page;
+    font-size: 1.6em;
+}

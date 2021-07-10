@@ -1,0 +1,13 @@
+.button-pink
+{
+    @include carte;
+    color: white;
+    background: linear-gradient($color-secondary,$color-primary);
+    padding: $margin-page;
+    padding-top: 0.8*$margin-page;
+    padding-bottom: 0.8*$margin-page;
+    min-width: 65%;
+    width: fit-content;
+    font-size:medium;
+    border-radius: 2*$margin-page;
+}
