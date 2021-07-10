@@ -1,3 +1,14 @@
+.bouton-retour
+{
+    border: none;
+    background: none;
+    position: absolute;
+    top: $margin-page;
+    left: $margin-page;
+    font-size: large;
+    color: rgb(66, 66, 66);
+}
+
 .menu-page
 {
     background-color: whitesmoke;
@@ -17,11 +28,23 @@
         button
         {
             @include carte;
+            border-radius: 15px;
             margin-top: 15px;
+            padding: 10px;
             text-align: left;
             h3,p
             {
-                margin: 5px;
+                margin: 3px;
+            }
+            .desc
+            {
+                float: left;
+            }
+            .prix
+            {
+                float:right;
+                font-weight: bold;
+                color: rgb(66, 66, 66);
             }
         }
     }
@@ -30,6 +53,17 @@
     {
         position: relative;
         z-index: -1;
+    }
+
+    div
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .button-pink
+    {
+        margin-top: 40px;
+        margin-bottom: 80px;
     }
 }
 

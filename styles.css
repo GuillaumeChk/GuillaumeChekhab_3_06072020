@@ -130,6 +130,16 @@ footer a {
   font-weight: bold;
 }
 
+.bouton-retour {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 23px;
+  left: 23px;
+  font-size: large;
+  color: #424242;
+}
+
 .menu-page {
   background-color: whitesmoke;
 }
@@ -156,17 +166,43 @@ footer a {
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.07);
   background-color: white;
   border: none;
+  border-radius: 15px;
   margin-top: 15px;
+  padding: 10px;
   text-align: left;
 }
 
 .menu-page section button h3, .menu-page section button p {
-  margin: 5px;
+  margin: 3px;
+}
+
+.menu-page section button .desc {
+  float: left;
+}
+
+.menu-page section button .prix {
+  float: right;
+  font-weight: bold;
+  color: #424242;
 }
 
 .menu-page img {
   position: relative;
   z-index: -1;
+}
+
+.menu-page div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu-page .button-pink {
+  margin-top: 40px;
+  margin-bottom: 80px;
 }
 
 .menu-titre {
