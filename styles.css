@@ -65,6 +65,136 @@ footer a {
   color: white;
 }
 
+.logo-site {
+  width: 180px;
+  max-width: 250px;
+  margin: 10px;
+}
+
+#section-resto, #section-explorer, #form-location {
+  background-color: whitesmoke;
+  padding: 23px;
+  padding-bottom: 46px;
+}
+
+#section-explorer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#section-explorer h2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#section-explorer p {
+  margin: 0;
+  font-size: large;
+}
+
+#section-explorer .button-pink {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#section-fonctionnement {
+  margin: 23px;
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
+
+#section-fonctionnement ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: numListe;
+}
+
+#section-fonctionnement ol li {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.07);
+  background-color: white;
+  border: none;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.13);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.13);
+  background-color: whitesmoke;
+  margin-bottom: 23px;
+  margin-left: 10px;
+  padding: 25px;
+  padding-left: 10px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#section-fonctionnement ol li::before {
+  position: relative;
+  left: -23px;
+  counter-increment: numListe 1;
+  content: counter(numListe);
+  color: white;
+  font-weight: 400;
+  font-size: small;
+  border-radius: 50%;
+  padding: 6px;
+  width: 12px;
+  height: 12px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #9356DC;
+}
+
+#section-fonctionnement ol li i {
+  color: gray;
+  padding-right: 20px;
+  font-size: larger;
+}
+
+#section-fonctionnement ol #li3 {
+  background-color: #f5edff;
+}
+
+#section-fonctionnement ol #li3 i {
+  color: #9356DC;
+}
+
+#form-location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #eaeaea;
+  padding: 15px;
+  color: #353535;
+  -webkit-box-shadow: inset 0px 5px 5px -5px gray;
+          box-shadow: inset 0px 5px 5px -5px gray;
+}
+
+#form-location input {
+  border: none;
+  background-color: #eaeaea;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+#form-location label {
+  margin-right: 15px;
+}
+
 .carte-resto {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -91,51 +221,12 @@ footer a {
   margin: auto;
 }
 
-#section-resto, #section-explorer, #form-location {
-  background-color: whitesmoke;
-  padding: 23px;
-  padding-bottom: 46px;
-}
-
-#section-explorer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
-#section-fonctionnement {
-  margin: 23px;
-  margin-top: 46px;
-}
-
-#form-location {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: gainsboro;
-  padding-bottom: 23px;
-}
-
-#form-location input {
-  border: none;
-  background-color: gainsboro;
-  font-size: 1em;
-  font-weight: bold;
-}
-
 .bouton-retour {
   border: none;
   background: none;
   position: absolute;
-  width: 70px;
-  height: 70px;
+  width: 65px;
+  height: 65px;
   top: 0;
   left: 0;
   font-size: large;
@@ -154,7 +245,7 @@ footer a {
 .menu-titre {
   border: none;
   background-color: whitesmoke;
-  border-radius: 60px;
+  border-radius: 40px;
   margin-top: -45px;
   margin-bottom: 0;
   padding-left: 23px;
@@ -229,7 +320,7 @@ footer a {
   margin-right: 10px;
 }
 
-.menu-page img {
+.menu-page .menu-img {
   position: relative;
   z-index: -1;
   -o-object-fit: cover;
@@ -272,5 +363,7 @@ footer a {
   width: fit-content;
   font-size: medium;
   border-radius: 40px;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
 }
 /*# sourceMappingURL=styles.css.map */

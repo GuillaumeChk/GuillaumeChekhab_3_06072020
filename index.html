@@ -7,16 +7,18 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+        <!-- Icones Font Awesome -->
+        <script src="https://kit.fontawesome.com/1d89ec237a.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <body>
         <header>
-            <h1>ohmyfood</h1>
+            <img class="logo-site" src="./images/logo/ohmyfood.png" alt="Logo Ohmyfood">
         </header>
 
         <form action="POST" id="form-location">
-            <label for="location">icon</label>
+            <label for="location"><i class="fas fa-map-marker-alt"></i></label>
             <input type="search" id="location" value="Paris, Belleville">
         </form>
 
@@ -30,11 +32,11 @@
 
         <section id="section-fonctionnement">
             <h2>Fonctionnement</h2>
-            <ul>
-                <li>Choisissez un restaurant</li>
-                <li>Composez votre menu</li>
-                <li>Dégustez au restaurant</li>
-            </ul>
+            <ol>
+                <li><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</li>
+                <li><i class="fas fa-list-ul"></i>Composez votre menu</li>
+                <li id="li3"><i class="fas fa-store"></i>Dégustez au restaurant</li>
+            </ol>
         </section>
 
         <section id="section-resto">
