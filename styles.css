@@ -134,10 +134,43 @@ footer a {
   border: none;
   background: none;
   position: absolute;
-  top: 23px;
-  left: 23px;
+  width: 70px;
+  height: 70px;
+  top: 0;
+  left: 0;
   font-size: large;
   color: #424242;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu-titre {
+  border: none;
+  background-color: whitesmoke;
+  border-radius: 60px;
+  margin-top: -45px;
+  margin-bottom: 0;
+  padding-left: 23px;
+  padding-right: 34.5px;
+  padding-top: 32px;
+  padding-bottom: 10px;
+  font-size: 1.7em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .menu-page {
@@ -152,6 +185,7 @@ footer a {
   font-variant-caps: all-petite-caps;
   font-weight: 400;
   margin: 0;
+  margin-left: 7px;
   padding-bottom: 3px;
   border-bottom: 3px solid #99E2D0;
   width: 40px;
@@ -176,6 +210,14 @@ footer a {
   margin: 3px;
 }
 
+.menu-page section button h3 {
+  font-size: large;
+}
+
+.menu-page section button p {
+  font-size: 1.1em;
+}
+
 .menu-page section button .desc {
   float: left;
 }
@@ -184,11 +226,15 @@ footer a {
   float: right;
   font-weight: bold;
   color: #424242;
+  margin-right: 10px;
 }
 
 .menu-page img {
   position: relative;
   z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 260px;
 }
 
 .menu-page div {
@@ -205,15 +251,6 @@ footer a {
   margin-bottom: 80px;
 }
 
-.menu-titre {
-  border: none;
-  background-color: whitesmoke;
-  border-radius: 46px;
-  margin-top: -46px;
-  padding: 23px;
-  font-size: 1.6em;
-}
-
 .button-pink {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -227,13 +264,13 @@ footer a {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   padding: 23px;
-  padding-top: 18.4px;
-  padding-bottom: 18.4px;
-  min-width: 65%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  min-width: 50%;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   font-size: medium;
-  border-radius: 46px;
+  border-radius: 40px;
 }
 /*# sourceMappingURL=styles.css.map */
