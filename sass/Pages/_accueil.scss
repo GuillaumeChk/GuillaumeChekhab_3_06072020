@@ -96,16 +96,19 @@
         background-color: $color-gris234;
         font-size: 1em;
         font-weight: bold;
+        width: auto;
+        text-align: center;
     }
-    label
-    {
-        margin-right: 15px;
-    }
+    // label
+    // {
+    //     padding-right: 15px;
+    // }
 }
 
 .carte-resto
 {
     @include carte;
+    position: relative;
     height: 250px;
     margin-bottom: 20px;
     background-color: white;
@@ -118,17 +121,43 @@
     }
     h3, p
     {
-        margin: auto;
+        margin: 0;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        line-height: 15px;
     }
-    // &__text
-    // {
-    //     display: flex;
-    //     flex-direction: column;
-    //     box-sizing: border-box;
-    //     border: solid black 5 px;
-    //     color: pink;
-    //     width: 100%;
-    //     margin: 13px;
-    //     padding: 13px;
-    // }
+    .carte-texte
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        height: 75px;
+        margin-left: 13px;
+        margin-top: -5px;
+        
+    }
+    .new
+    {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        border-radius: 3px;
+        padding: 6px;
+        padding-left: 11px;
+        padding-right: 11px;
+        color: rgb(0, 135, 102);
+        background-color: $color-accent;
+        font-weight: bold;
+        font-size: .9em;
+    }
+    i
+    {
+        position: absolute;
+        right: 25px;
+        bottom: 30px;
+        font-size: 1.7em;
+    }
 }
+
+
+
