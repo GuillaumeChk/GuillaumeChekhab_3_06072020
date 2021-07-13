@@ -43,6 +43,13 @@ img {
   width: 100%;
 }
 
+@media only screen and (min-width: 500px) {
+  body {
+    max-width: 500px;
+    margin: auto;
+  }
+}
+
 footer {
   background-color: #353535;
   color: white;
@@ -258,11 +265,11 @@ footer i {
   font-size: .9em;
 }
 
-.carte-resto i {
+.carte-resto .button-heart {
+  font-size: 1.7em;
   position: absolute;
   right: 25px;
-  bottom: 30px;
-  font-size: 1.7em;
+  bottom: 25px;
 }
 
 .bouton-retour {
@@ -306,6 +313,10 @@ footer i {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+}
+
+.menu-titre .button-heart {
+  background-color: whitesmoke;
 }
 
 .menu-page {
@@ -409,5 +420,55 @@ footer i {
   border-radius: 40px;
   -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
           box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+  -webkit-transition-property: background, -webkit-box-shadow;
+  transition-property: background, -webkit-box-shadow;
+  transition-property: background, box-shadow;
+  transition-property: background, box-shadow, -webkit-box-shadow;
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
+}
+
+.button-pink:hover {
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff88de), to(#9b63df));
+  background: linear-gradient(#ff88de, #9b63df);
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.button-heart {
+  border: none;
+  font-size: 1em;
+  background-color: white;
+}
+
+.button-heart .fas {
+  display: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), color-stop(25%), to(#FF79DA));
+  background: linear-gradient(#9356DC, 25%, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 1000ms;
+  transition: -webkit-transform 1000ms;
+  transition: transform 1000ms;
+  transition: transform 1000ms, -webkit-transform 1000ms;
+}
+
+.button-heart:hover {
+  cursor: pointer;
+}
+
+.button-heart:hover .far {
+  display: none;
+}
+
+.button-heart:hover .fas {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 /*# sourceMappingURL=styles.css.map */

@@ -11,4 +11,38 @@
     font-size:medium;
     border-radius: 40px;
     box-shadow: 0 5px 5px rgba($color: #000000, $alpha: .15);
+    transition-property: background, box-shadow;
+    transition-duration: 400ms;
+    &:hover
+    {
+        cursor: pointer;
+        background: linear-gradient(lighten($color-secondary, 3%), lighten($color-primary, 3%));
+        box-shadow: 0 5px 5px rgba($color:#000000, $alpha: .4);
+    }
+}
+
+.button-heart
+{
+    border: none;
+    font-size: 1em;
+    background-color: white;
+    .fas
+    {
+        display: none;
+        background: linear-gradient($color-primary, 25%, $color-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform: scale(0);
+        transition: transform 1000ms;
+    }
+    &:hover
+    {
+        cursor: pointer;
+        .far{display: none;}
+        .fas
+        {
+            display: inline-flex;
+            transform: scale(1);
+        }
+    }
 }
