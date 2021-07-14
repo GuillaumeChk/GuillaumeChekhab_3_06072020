@@ -42,6 +42,7 @@
     section
     {
         padding: $margin-page/2;
+
         h2
         {
             font-variant-caps: all-petite-caps;
@@ -52,14 +53,14 @@
             border-bottom: 3px solid $color-accent;
             width: 40px;
         }
-        button
+        .bouton-choix
         {
             @include carte;
             border-radius: 15px;
             margin-top: 15px;
             padding: 10px;
             text-align: left;
-            h3,p
+            h3,span
             {
                 margin: 3px;
             }
@@ -67,23 +68,41 @@
             {
                 font-size: large;
             }
-            p
+            span
             {
                 font-size: 1.1em;
             }
-            .desc
+            .info
             {
-                float: left;
+                display: flex;
+                justify-content: space-between;
+            }
+            .desc, h3
+            {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
             .prix
             {
-                float:right;
                 font-weight: bold;
                 color: rgb(66, 66, 66);
                 margin-right: 10px;
             }
+
+    // Animation Menu boutons (entrée, plat, dessert)
+            opacity: 1;
+            animation: plats 600ms ease-in-out both;
+            @for $i from 1 to 5 // 4 choix max
+            {
+                &--#{$i} 
+                {
+                    animation-delay: 200ms * ($i - 1);
+                }
+            }
         }
     }
+
     .menu-img
     {
         position: relative;
@@ -101,5 +120,17 @@
     {
         margin-top: 40px;
         margin-bottom: 80px;
+    }
+}
+
+@keyframes plats {
+    0%
+    {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100%
+    {
+        opacity: 1;
     }
 }
