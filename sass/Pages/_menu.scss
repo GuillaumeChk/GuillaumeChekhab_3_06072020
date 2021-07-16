@@ -58,9 +58,49 @@
             @include carte;
             border-radius: 15px;
             margin-top: 15px;
-            padding: 10px;
+            padding: 0;
             text-align: left;
-            h3,span
+            display: flex;
+            
+            .texte
+            { 
+                display: block;
+                padding: 10px;
+                width: 100%;
+            }
+            .coche
+            {
+                display: flex;
+                width: 0%;
+                align-self: stretch;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-size: 1.6em;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                background-color: $color-accent;
+                transform-origin: 100% 50%;
+                transition: width 600ms;
+                i
+                {
+                    overflow: hidden;
+                }
+            }
+            &:hover
+            {
+                .coche
+                {
+                    width: 30%;
+                    transition: width 600ms;
+                }
+                i
+                {
+                    transform: rotate(-360deg);
+                    transition: transform 600ms;
+                }
+            }
+            h3, span
             {
                 margin: 3px;
             }
@@ -77,7 +117,7 @@
                 display: flex;
                 justify-content: space-between;
             }
-            .desc, h3
+            .desc, h3, .texte
             {
                 white-space: nowrap;
                 overflow: hidden;

@@ -171,7 +171,7 @@
     background-color: white;
     display: flex;
     visibility: collapse;
-    animation: loading 1s both;
+    animation: loading 3s both;
 }
 
 @keyframes loading
@@ -183,5 +183,47 @@
     100%
     {
         visibility: collapse;
+    }
+}
+
+.spin
+{
+    width: 5vw;
+    height: 5vw;
+    border: none;
+    border-radius: 50%;
+    margin: 3vw;
+    animation: spinning 1s backwards infinite;
+    animation-direction: alternate;
+    &--1
+    {
+        background-color: $color-primary;
+    }
+    &--2
+    {
+        background-color: $color-secondary;
+    }
+    &--3
+    {
+        background-color: $color-accent;
+    }
+    @for $j from 1 to 4
+    {
+        &--#{$j} 
+        {
+            animation-delay: 200ms * $j;
+        }
+    }
+}
+
+@keyframes spinning
+{
+    0%
+    {
+        transform: scale(0.5);
+    }
+    100%
+    {
+        transform: scale(1.5);
     }
 }

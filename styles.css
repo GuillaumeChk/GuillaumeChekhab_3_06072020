@@ -291,8 +291,8 @@ footer i {
   display: -ms-flexbox;
   display: flex;
   visibility: collapse;
-  -webkit-animation: loading 1s both;
-          animation: loading 1s both;
+  -webkit-animation: loading 3s both;
+          animation: loading 3s both;
 }
 
 @-webkit-keyframes loading {
@@ -310,6 +310,67 @@ footer i {
   }
   100% {
     visibility: collapse;
+  }
+}
+
+.spin {
+  width: 5vw;
+  height: 5vw;
+  border: none;
+  border-radius: 50%;
+  margin: 3vw;
+  -webkit-animation: spinning 1s backwards infinite;
+          animation: spinning 1s backwards infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+.spin--1 {
+  background-color: #9356DC;
+}
+
+.spin--2 {
+  background-color: #FF79DA;
+}
+
+.spin--3 {
+  background-color: #99E2D0;
+}
+
+.spin--1 {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.spin--2 {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.spin--3 {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+@-webkit-keyframes spinning {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+}
+
+@keyframes spinning {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
 }
 
@@ -389,11 +450,63 @@ footer i {
   border: none;
   border-radius: 15px;
   margin-top: 15px;
-  padding: 10px;
+  padding: 0;
   text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   opacity: 1;
   -webkit-animation: plats 600ms ease-in-out both;
           animation: plats 600ms ease-in-out both;
+}
+
+.menu-page section .bouton-choix .texte {
+  display: block;
+  padding: 10px;
+  width: 100%;
+}
+
+.menu-page section .bouton-choix .coche {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 0%;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 1.6em;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #99E2D0;
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+  -webkit-transition: width 600ms;
+  transition: width 600ms;
+}
+
+.menu-page section .bouton-choix .coche i {
+  overflow: hidden;
+}
+
+.menu-page section .bouton-choix:hover .coche {
+  width: 30%;
+  -webkit-transition: width 600ms;
+  transition: width 600ms;
+}
+
+.menu-page section .bouton-choix:hover i {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+  -webkit-transition: -webkit-transform 600ms;
+  transition: -webkit-transform 600ms;
+  transition: transform 600ms;
+  transition: transform 600ms, -webkit-transform 600ms;
 }
 
 .menu-page section .bouton-choix h3, .menu-page section .bouton-choix span {
@@ -417,7 +530,7 @@ footer i {
           justify-content: space-between;
 }
 
-.menu-page section .bouton-choix .desc, .menu-page section .bouton-choix h3 {
+.menu-page section .bouton-choix .desc, .menu-page section .bouton-choix h3, .menu-page section .bouton-choix .texte {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
