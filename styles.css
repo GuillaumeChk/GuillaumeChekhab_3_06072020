@@ -654,14 +654,14 @@ footer i {
 
 .button-heart .far {
   position: absolute;
-  right: 25px;
+  right: 0px;
   bottom: 0px;
   opacity: 1;
 }
 
 .button-heart .fas {
   position: absolute;
-  right: 25px;
+  right: 0px;
   bottom: 0px;
   opacity: 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), color-stop(25%), to(#FF79DA));
