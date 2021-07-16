@@ -26,23 +26,35 @@
     border: none;
     font-size: 1em;
     background-color: white;
+    position: relative;
+    .far
+    {
+        position: absolute;
+        right: 25px;
+        bottom: 0px;
+        opacity: 1;
+    }
     .fas
     {
-        display: none;
+        position: absolute;
+        right: 25px;
+        bottom: 0px;
+        opacity: 0;
         background: linear-gradient($color-primary, 25%, $color-secondary);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        transform: scale(0);
-        transition: transform 1000ms ease-in;
     }
     &:hover
     {
         cursor: pointer;
-        .far{display: none;}
+        .far
+        {
+            opacity: 0;
+        }
         .fas
         {
-            display: inline-flex;
-            transform: scale(1);
+            opacity: 1;
+            transition: opacity 2s;
         }
     }
 }
