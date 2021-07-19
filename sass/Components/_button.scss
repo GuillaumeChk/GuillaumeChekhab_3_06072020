@@ -50,11 +50,12 @@
         .far
         {
             opacity: 0;
+            transition: opacity 100ms;
         }
         .fas
         {
             opacity: 1;
-            transition: opacity 2s;
+            transition: opacity 1.5s;
         }
     }
 }

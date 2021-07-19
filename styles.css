@@ -481,6 +481,8 @@ footer i {
           align-items: center;
   color: white;
   font-size: 1.6em;
+  border: none;
+  padding: 0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #99E2D0;
@@ -492,6 +494,10 @@ footer i {
 
 .menu-page section .bouton-choix .coche i {
   overflow: hidden;
+}
+
+.menu-page section .bouton-choix:active .coche {
+  background-color: #85dcc7;
 }
 
 .menu-page section .bouton-choix:hover .coche {
@@ -676,11 +682,13 @@ footer i {
 
 .button-heart:hover .far {
   opacity: 0;
+  -webkit-transition: opacity 100ms;
+  transition: opacity 100ms;
 }
 
 .button-heart:hover .fas {
   opacity: 1;
-  -webkit-transition: opacity 2s;
-  transition: opacity 2s;
+  -webkit-transition: opacity 1.5s;
+  transition: opacity 1.5s;
 }
 /*# sourceMappingURL=styles.css.map */
